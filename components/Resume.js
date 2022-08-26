@@ -1,3 +1,4 @@
+import Academics from "./Academics";
 import ContactCard from "./ContactCard";
 import Introduction from "./introduction/Introduction";
 import WorkExperience from "./WorkExperience";
@@ -10,12 +11,19 @@ export default function Resume() {
                 {/* Contact Card */}
                 <ContactCard />
                 {/* Work Experience */}
-                <WorkExperience/> 
+                <WorkExperience />
+            </div>
+            <div className="flex-row flex">
+                {/* Contact Card */}
+                <Academics />
+                {/* Work Experience */}
+                <WorkExperience />
             </div>
         </div>
 
     )
 };
+
 
 
 
