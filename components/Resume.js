@@ -1,8 +1,7 @@
 import AcademicsCard from "./AcademicsCard";
 import ContactCard from "./ContactCard";
-import HeroImage from "./introduction/HeroImage";
-import Introduction from "./introduction/Introduction";
-import PersonalSummary from "./introduction/PersonalSummary";
+import HeroImage from "./HeroImage";
+import PersonalSummary from "./PersonalSummary";
 import TechnicalProfency from "./TechnicalProfency";
 import WorkExperience from "./WorkExperience";
 
