@@ -2,6 +2,7 @@ import AcademicsCard from "./AcademicsCard";
 import ContactCard from "./ContactCard";
 import HeroImage from "./HeroImage";
 import PersonalSummary from "./PersonalSummary";
+import ProjectHighlights from "./ProjectHighlights";
 import TechnicalProfency from "./TechnicalProfency";
 import WorkExperience from "./WorkExperience";
 
@@ -41,6 +42,8 @@ function LayoutRight() {
                 <PersonalSummary />
                 {/* Work Experience */}
                 <WorkExperience />
+                {/* Project highlights */}
+                <ProjectHighlights/>
             </section>
         </div>
     )

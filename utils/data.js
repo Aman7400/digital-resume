@@ -36,7 +36,7 @@ const experiences = [
         company: {
             name: 'Areya Technologies',
             logo: '/areya-logo.jpeg',
-            visitUrl:'https://areya.tech/'
+            visitUrl: 'https://areya.tech/'
         },
         startDate: 'Jun 2022',
         endDate: 'Present',
@@ -52,7 +52,7 @@ const experiences = [
         company: {
             name: 'Flipstack Technologies',
             logo: '/flipstack-logo.jpeg',
-            visitUrl:'https://flipstack.in/'
+            visitUrl: 'https://flipstack.in/'
         },
         workedOn: [
             'Worked and developed Fintech & Dashboard applications with technologies like - React, CSS3, JavaScript, NodeJS, MongoDB etc.'
@@ -67,7 +67,7 @@ const experiences = [
         company: {
             name: 'Verzeo E-learning',
             logo: '/verzeo-logo.jpeg',
-            visitUrl:'https://www.verzeo.in/'
+            visitUrl: 'https://www.verzeo.in/'
         },
         workedOn: [
             'Worked and developed projects on technologies like - HTML5, CSS3, JavaScript, JQuery, NodeJS'
@@ -75,4 +75,38 @@ const experiences = [
     }
 ]
 
-export { technicalProfencies, academics, contacts, experiences }
+const projects = [
+    {
+        title: 'Instant Medical Support (IMS)',
+        description: 'Instant medical Support Web Application powered by Next JS',
+        visitUrl: 'https://github.com/Aman7400/ims',
+        technologies: ['Javascript, React, Next,Chakra UI']
+    },
+    {
+        title: 'Rockstar Pay',
+        description: 'Banking App powered by Next JS',
+        visitUrl: 'https://github.com/Aman7400/rockstar-pay',
+        technologies: ['Javascript, React, Next, Chakra UI']
+    },
+    {
+        title: 'Shopping Mobile App',
+        description: 'A Client Side React Application for Creating Quiz and Tests',
+        visitUrl: 'https://github.com/Aman7400/shopping-app',
+        technologies: ['Javascript, React Native, React Native Paper']
+    },
+    {
+        title: 'Social Media Mobile App',
+        description: 'Social Media App UI in React Native',
+        visitUrl: 'https://github.com/Aman7400/social-media-ui ',
+        technologies: ['Javascript, React,React Native, Expo, React Native Paper']
+    }
+
+]
+
+const viewAll = {
+    projectsUrl : 'https://github.com/Aman7400?tab=repositories',
+    experiencesUrl : 'https://www.linkedin.com/in/amanks7400/'
+}
+
+
+export { technicalProfencies, academics, contacts, experiences, projects, viewAll }

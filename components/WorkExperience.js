@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { experiences } from "../utils/data"
+import { experiences, viewAll } from "../utils/data"
 
 export default function WorkExperience() {
     let filteredExperiences = experiences;
@@ -13,9 +13,11 @@ export default function WorkExperience() {
                 <h1 className="font-mono font-extrabold text-lg">Work Experience</h1>
                 {
                     experiences.length > 2 &&
-                    <h1 className="font-mono font-light hover:font-semibold text-sm cursor-pointer">
-                        View All
-                    </h1>
+                    <Link target="_blank" href={viewAll.experiencesUrl}>
+                        <h1 className="font-mono font-light hover:font-semibold text-sm cursor-pointer">
+                            View All
+                        </h1>
+                    </Link>
                 }
             </section>
             <section>
