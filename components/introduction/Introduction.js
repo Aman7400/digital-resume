@@ -6,8 +6,7 @@ export default function Introduction() {
         <div className="flex flex-row justify-between mb-4">
             {/* Image */}
             <HeroImage />
-            {/* Personal Summary */}
-            <PersonalSummary />
+            
         </div>
     )
 }
