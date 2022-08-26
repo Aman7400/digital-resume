@@ -6,7 +6,7 @@ export default function PersonalSummary() {
                 <h4 className="font-mono text-xl text-gray-600 font-bold">Full Stack Developer</h4>
             </section>
             <p className="font-mono text-md">
-                I love <span className="font-bold">designing/developing</span>  creative websites and apps. Most of my works are focused on the Frontend side of the web. love learning new technologies and using them in my projects. </p>
+                I love <span className="font-bold">Designing | Developing</span>  creative websites and apps. Most of my works are focused on the Frontend side of the web. love learning new technologies and using them in my projects. </p>
         </section>
     )
 }

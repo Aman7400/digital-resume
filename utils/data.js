@@ -22,11 +22,11 @@ const technicalProfencies = {
 }
 
 const contacts = [
-    { href: "www.facebook.xom", title: "www.facebook.xom", icon: 'akar-icons:twitter-fill' },
-    { href: "www.facebook.xom", title: "www.facebook.xom", icon: 'akar-icons:linkedin-fill' },
-    { href: "www.facebook.xom", title: "www.facebook.xom", icon: 'akar-icons:github-fill' },
-    { href: "www.facebook.xom", title: "www.facebook.xom", icon: 'carbon:location-heart-filled' },
-    { href: "www.facebook.xom", title: "www.facebook.xom", icon: 'fluent:mail-16-filled' },
+    { href: "https://www.linkedin.com/in/amanks7400/", title: "amanks7400", icon: 'akar-icons:linkedin-fill' },
+    { href: "https://twitter.com/strk1703", title: "strk1703", icon: 'akar-icons:twitter-fill' },
+    { href: "https://github.com/Aman7400", title: "Aman7400", icon: 'akar-icons:github-fill' },
+    { href: "https://goo.gl/maps/TVW66mzDf1xoFHEy5", title: "Lucknow, Uttar Pradesh", icon: 'carbon:location-heart-filled' },
+    { href: "mailto:amanks7400@gmail.com", title: "amanks7400@gmail.com", icon: 'fluent:mail-16-filled' },
 ]
 
 const experiences = [
