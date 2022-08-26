@@ -33,7 +33,11 @@ const experiences = [
     {
         position: 'Full Time',
         jobProfile: 'FULL STACK DEVELOPER',
-        companyName: 'Areya Technologies Pvt Ltd',
+        company: {
+            name: 'Areya Technologies',
+            logo: '/areya-logo.jpeg',
+            visitUrl:'https://areya.tech/'
+        },
         startDate: 'Jun 2022',
         endDate: 'Present',
         workedOn: [
@@ -42,10 +46,14 @@ const experiences = [
     },
     {
         position: 'INTERN',
-        jobProfile: 'FULL STACK WEB DEVELOPER',
-        companyName: 'Flipstack Technologies',
+        jobProfile: 'FULL STACK DEVELOPER',
         startDate: 'July 2021',
         endDate: 'May 2022',
+        company: {
+            name: 'Flipstack Technologies',
+            logo: '/flipstack-logo.jpeg',
+            visitUrl:'https://flipstack.in/'
+        },
         workedOn: [
             'Worked and developed Fintech & Dashboard applications with technologies like - React, CSS3, JavaScript, NodeJS, MongoDB etc.'
         ]
@@ -53,9 +61,14 @@ const experiences = [
     {
         position: 'INTERN',
         jobProfile: 'FULL-STACK WEB DEVELOPMENT',
-        companyName: 'Verzeo E-learning',
+
         startDate: 'Jun 2020',
         endDate: 'Aug 2020',
+        company: {
+            name: 'Verzeo E-learning',
+            logo: '/verzeo-logo.jpeg',
+            visitUrl:'https://www.verzeo.in/'
+        },
         workedOn: [
             'Worked and developed projects on technologies like - HTML5, CSS3, JavaScript, JQuery, NodeJS'
         ]
