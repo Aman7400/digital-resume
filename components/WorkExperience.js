@@ -1,6 +1,10 @@
 import { experiences } from "../utils/data"
 
 export default function WorkExperience() {
+    let filteredExperiences  = experiences;
+    if(experiences.length > 2){
+        filteredExperiences = experiences.slice(0,experiences.length-1)
+    }
     return (
             <section className="items-center ">
                 <section className="flex flex-row mb-2 items-center justify-between">
@@ -14,7 +18,7 @@ export default function WorkExperience() {
                 </section>
                 <section>
                     {
-                        experiences.map((experience, i) =>
+                       filteredExperiences.map((experience, i) =>
                             <WorkExperienceListItem key={i} {...experience} />)
                     }
                 </section>
