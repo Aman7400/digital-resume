@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.pulse {
+ animation: stretch 800ms ease-in alternate-reverse infinite;
+ color: red;
+}
+
+
+@keyframes stretch {
+    0% {
+        transform: scale(.5);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+
+}
