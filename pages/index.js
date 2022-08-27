@@ -3,6 +3,7 @@ import Head from 'next/head'
 import React from 'react'
 import Footer from '../components/Footer'
 import Resume from '../components/Resume'
+import Toolbar from '../components/Toolbar'
 
 
 
@@ -27,27 +28,3 @@ export default function Home() {
 }
 
 
-function Toolbar() {
-  const [currentTheme,setCurrentTheme] = React.useState("dark")
-
-  const handleThemeChange = () => {
-
-
-    setCurrentTheme((prev) => {
-      if (prev === 'light') {
-        return 'dark'
-      } 
-      return 'light'
-    }) 
-
-
-  }
-
-  return (
-    <div className="absolute right-8 top-8">
-      <section onClick={handleThemeChange}>
-        <Icon  icon={currentTheme === "light" ? "bxs:sun" : "bxs:moon"} className="text-4xl pointer-events-none cursor-pointer text-white" />
-      </section>
-    </div>
-  )
-}
