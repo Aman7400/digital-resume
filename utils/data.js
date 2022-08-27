@@ -1,6 +1,9 @@
 const academics = [
     {
-        collegeName: 'Lovely Professional University',
+        college: {
+            name: 'Lovely Professional University',
+            visitUrl: 'https://www.lpu.in/'
+        },
         state: 'Punjab',
         courseName: 'B.Tech, Computer Science',
         startDate: 'July 2018',
