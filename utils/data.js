@@ -35,7 +35,7 @@ const experiences = [
         jobProfile: 'FULL STACK DEVELOPER',
         company: {
             name: 'Areya Technologies',
-            logo: '/areya-logo.jpeg',
+            logo: '/logos/areya-logo.jpeg',
             visitUrl: 'https://areya.tech/'
         },
         startDate: 'Jun 2022',
@@ -51,7 +51,7 @@ const experiences = [
         endDate: 'May 2022',
         company: {
             name: 'Flipstack Technologies',
-            logo: '/flipstack-logo.jpeg',
+            logo: '/logos/flipstack-logo.jpeg',
             visitUrl: 'https://flipstack.in/'
         },
         workedOn: [
@@ -66,7 +66,7 @@ const experiences = [
         endDate: 'Aug 2020',
         company: {
             name: 'Verzeo E-learning',
-            logo: '/verzeo-logo.jpeg',
+            logo: '/logos/verzeo-logo.jpeg',
             visitUrl: 'https://www.verzeo.in/'
         },
         workedOn: [
