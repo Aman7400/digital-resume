@@ -7,7 +7,6 @@
 
 .pulse {
  animation: stretch 800ms ease-in alternate-reverse infinite;
- color: red;
 }
 
 
