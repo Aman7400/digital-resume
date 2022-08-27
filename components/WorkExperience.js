@@ -10,11 +10,11 @@ export default function WorkExperience() {
     return (
         <section className="items-center ">
             <section className="flex flex-row mb-2 items-center justify-between">
-                <h1 className="font-mono font-extrabold text-lg">Work Experience</h1>
+                <h1 className="font-mono font-extrabold text-lg text-heading">Work Experience</h1>
                 {
                     experiences.length > 2 &&
                     <Link target="_blank" href={viewAll.experiencesUrl}>
-                        <h1 className="font-mono font-light hover:font-semibold text-sm cursor-pointer">
+                        <h1 className="font-mono text-heading2 font-light hover:font-semibold text-sm cursor-pointer">
                             View All
                         </h1>
                     </Link>
@@ -44,19 +44,19 @@ function WorkExperienceListItem({ position, jobProfile, company, startDate, endD
                 }} />
 
                 <Link target="_blank" href={company.visitUrl}>
-                    <section className="ml-2">
+                    <section className="ml-2 ">
 
-                        <h1 className=" font-mono font-bold">{company.name}</h1>
-                        <h1 className=" font-mono text-xs  font-bold">{jobProfile}</h1>
+                        <h1 className=" font-mono font-bold text-heading2">{company.name}</h1>
+                        <h1 className=" font-mono text-xs  font-bold text-subHeading">{jobProfile}</h1>
                     </section>
                 </Link>
 
             </section>
             {/* Company , Time Line */}
-            <h3 className="font-mono text-xs">{position}, <span className="text-xs" >{startDate} - {endDate}</span> </h3>
-            <ul >
+            <h3 className="font-mono text-xs text-subHeading mb-2">{position}, <span className="text-xs" >{startDate} - {endDate}</span> </h3>
+            <ul className="list-disc list-inside" >
                 {
-                    workedOn.map((w, i) => <li className="mb-1 italic font-mono font-thin text-sm" key={i}>{w}</li>)
+                    workedOn.map((w, i) => <li className="mb-1 italic text-subHeading font-mono font-thin text-sm" key={i}>{w}</li>)
                 }
             </ul>
         </section>

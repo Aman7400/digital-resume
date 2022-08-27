@@ -9,6 +9,11 @@ module.exports = {
   theme: {
     fontFamily : {
       'mono' : ['Noto Sans Mono','ui-monospace']
+    },
+    colors : {
+      heading : '#ff00d4',
+      heading2 : '#FA2FB5',
+      subHeading: '#BC6FF1',
     }
   },
   plugins: [],

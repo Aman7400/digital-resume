@@ -8,7 +8,7 @@ import WorkExperience from "./WorkExperience";
 
 export default function Resume() {
     return (
-        <div className="w-4/6 flex-row flex p-16 bg-[#d9d9d9be] rounded-lg my-16 round-lg">
+        <div className="w-4/6 flex-row flex p-16 bg-[#52057ba8] shadow-lg rounded-lg my-16 round-lg">
             <LayoutLeft />
             <LayoutRight />
         </div>
@@ -20,7 +20,7 @@ export default function Resume() {
 function LayoutLeft() {
     return (
         <div className="flex-1 p-2 w-1/2 ">
-            <section className="bg-[#ccc9c9de]  shadow-lg p-6">
+            <section className="bg-[#8a2cdc67]  shadow-lg p-6">
                 {/* Profile Pic */}
                 <HeroImage />
                 {/* Contacts Card */}

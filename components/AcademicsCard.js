@@ -1,10 +1,11 @@
+import Link from "next/link"
 import { academics } from "../utils/data"
 
 export default function AcademicsCard() {
     return (
 
         <section>
-            <h1 className="font-mono font-extrabold text-lg mb-2">Academic Profile</h1>
+            <h1 className="font-mono font-extrabold text-lg text-heading mb-2">Academic Profile</h1>
             <section>
 
                 {
@@ -18,22 +19,28 @@ export default function AcademicsCard() {
 }
 
 
-function AcademicItemCard({ collegeName, state, courseName, startDate, endDate, highlights, grades }) {
+function AcademicItemCard({ college, state, courseName, startDate, endDate, highlights, grades }) {
     return (
         <section className="mb-4">
             {/* Position */}
-            <h1 className="font-mono font-bold">{collegeName}</h1>
-            <h2 className="font-mono font-semibold text-sm">{courseName}</h2>
-            <span className="text-xs font-mono" >{state} ({startDate} - {endDate})</span>
-            <ul>
+
+
+            <h1 className="font-mono font-bold text-heading2 drop-shadow-md">
+                <Link target="_blank" href={college.visitUrl}>
+                    {college.name}
+                </Link>
+            </h1>
+
+
+            <h2 className="font-mono font-semibold text-subHeading text-sm">{courseName}</h2>
+            <p className="text-xs font-mono text-subHeading mb-2" >{state} ({startDate} - {endDate})</p>
+            <ul className="list-disc list-inside text-subHeading italic font-mono font-thin text-xs">
                 {
-                    highlights.map((highlight, i) => <li className="mb-2 italic font-mono font-thin text-xs" key={i}>{highlight}</li>)
+                    highlights.map((highlight, i) => <li className="mb-2  drop-shadow-lg " key={i}>{highlight}</li>)
                 }
-            </ul>
-            <ul >
                 {
                     grades.map(({ title, grade }, i) =>
-                        <li className="italic  font-mono font-thin text-xs mr-1" key={i}>
+                        <li className=" mr-1" key={i}>
                             <span>{title}:</span>
                             <span>{grade}</span>
                         </li>)
